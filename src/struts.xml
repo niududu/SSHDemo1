@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="user" namespace="/" extends="struts-default">
+		<action name="userAction" class="com.neusoft.action.UserAction" method="save">
+			<result name="savesuccess">/savesuccess.jsp</result>
+		</action>
+		<action name="userAction_delete" class="com.neusoft.action.UserAction" method="delete">
+			<result name="deletesuccess">/deletesuccess.jsp</result>
+		</action>
+		<action name="userAction_update" class="com.neusoft.action.UserAction" method="update">
+			<result name="updatesuccess">/updatesuccess.jsp</result>
+		</action>
+		<action name="userAction_find" class="com.neusoft.action.UserAction" method="find">
+			<result name="findsuccess">/findsuccess.jsp</result>
+		</action>
+	</package>
+</struts>    
